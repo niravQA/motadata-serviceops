@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="LoginTests" verbose="1">
+
+	<test name="PositiveTests">
+		<!--		<parameter name="browser" value="chrome" /> !-->
+		<groups>
+			<run>
+				<include name="positiveTests"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.loginpage.LoginTests" />
+		</classes>
+	</test>
+
+	<test name="NegativeUsernameTests">
+		<parameter name="browser" value="chrome" />
+		<parameter name="username" value="nirav123" />
+		<parameter name="password" value="admin@123" />
+		<parameter name="expectderrorMessage" value="Invalid Credentials, Please try again." />
+		<classes>
+			<class name="com.loginpage.LoginTests">
+				<methods>
+					<include name="negativeLoginTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="NegativepasswordTests">
+		<parameter name="browser" value="firefox" />
+		<parameter name="username" value="nirav" />
+		<parameter name="password" value="admin@12345" />
+		<parameter name="expectderrorMessage" value="Invalid Credentials, Please try again." />
+		<classes>
+			<class name="com.loginpage.LoginTests">
+				<methods>
+					<include name="negativeLoginTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

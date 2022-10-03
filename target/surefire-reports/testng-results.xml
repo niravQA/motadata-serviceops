@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-02T17:58:45 IST" name="\AllTests" finished-at="2022-10-02T18:01:19 IST" duration-ms="153566">
+    <groups>
+    </groups>
+    <test started-at="2022-10-02T17:58:45 IST" name="PositiveTests" finished-at="2022-10-02T17:59:17 IST" duration-ms="31733">
+      <class name="com.loginpage.PositiveTests">
+        <test-method signature="loginTest()[pri:0, instance:com.loginpage.PositiveTests@1700915]" started-at="2022-10-02T17:58:45 IST" name="loginTest" finished-at="2022-10-02T17:59:17 IST" duration-ms="31547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.loginpage.PositiveTests -->
+    </test> <!-- PositiveTests -->
+    <test started-at="2022-10-02T17:59:17 IST" name="NegativeTests" finished-at="2022-10-02T18:01:19 IST" duration-ms="121781">
+      <class name="com.loginpage.NegativeTests">
+        <test-method signature="incorrectpasswordTest()[pri:0, instance:com.loginpage.NegativeTests@8dbdac1]" started-at="2022-10-02T17:59:17 IST" name="incorrectpasswordTest" finished-at="2022-10-02T18:00:59 IST" duration-ms="101956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectpasswordTest -->
+        <test-method signature="incorrectusernameTest()[pri:0, instance:com.loginpage.NegativeTests@8dbdac1]" started-at="2022-10-02T18:00:59 IST" name="incorrectusernameTest" finished-at="2022-10-02T18:01:19 IST" duration-ms="19822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectusernameTest -->
+      </class> <!-- com.loginpage.NegativeTests -->
+    </test> <!-- NegativeTests -->
+  </suite> <!-- \AllTests -->
+</testng-results>
